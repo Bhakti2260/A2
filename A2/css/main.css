@@ -1,0 +1,232 @@
+/*Bhakti Patel, Student Number: 8912260 */
+body {
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  background-color: rgb(104, 156, 201);
+}
+main {
+  background-color: rgb(215, 225, 225);
+  column-gap: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+#video{
+  width: auto;
+}
+
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  padding: auto;
+  background-color: rgb(132, 193, 193);
+  border: 1px rgba(0, 0, 0, 0.812);
+  text-align: center;
+  color: #efefff;
+  background-image: linear-gradient(to left, rgb(111, 111, 193), rgb(173, 90, 90));
+  text-align: center;
+  font-size: 24px;
+}
+
+h2 {
+  color: rgb(58, 58, 95);
+  margin: auto;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  background-color: rgb(148, 165, 171);
+  border: 1px #111111;
+}
+
+html {
+  font: normal normal normal 10/2.5 Arial;
+}
+
+aside {
+  background: url("../images/background\ images.jpeg") center bottom / cover;
+  padding: 10px;
+  color: aquamarine;
+}
+
+aside ul a {
+  color: rgb(255, 255, 255);
+}
+nav ul {
+  list-style: none;
+  align-items: center;
+}
+nav ul ul li {
+  display: block;
+}
+nav li:hover ul {
+  display: block;
+}
+nav ul li a:hover {
+  background-color: rgb(70, 70, 108);
+  color: rgb(85, 126, 126);
+}
+
+nav ul li {
+ padding: 10px;
+ display:inline;
+ display:inline-block;
+ list-style-type: none;
+ align-items: center;
+ text-align: center;
+ margin: auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  align-items: center;
+  border: #111111;
+  color: azure;
+  padding: auto;
+  background-color: rgb(74, 109, 97);
+  text-align: center;
+}
+nav li ul {
+  display: none;
+  position: absolute;
+}
+
+a {
+  text-align: center;
+}
+
+a:hover {
+  color: rgb(219, 247, 219);
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+#img{
+  width: 50%;
+  height: 50%;
+  clip-path:circle();
+}
+#img {
+  width: 100%;
+  height: auto;
+}
+#grid-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  flex: 1 2;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  background-color: aquamarine;
+  row-gap: 5px;
+}
+
+
+.video{
+  width: 100%;
+  height: auto;
+}
+.iframe{
+  width: 1080px; 
+  height: 720px;
+}
+
+.para {
+  padding: auto;
+}
+
+.structural {
+  margin: 2rem;
+  padding: 2rem;
+  border: #111111;
+}
+
+blockquote{
+  text-align: center;
+  background-color: rgb(205, 143, 152);
+  padding: auto;
+  margin: auto;
+}
+
+table,th,td {
+  border-collapse: collapse;
+  padding: 10px;
+  border: 1px solid #111111;
+  margin: auto;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  color: white;
+  background-color: rgb(36, 89, 135);
+  border: 2px dashed black;
+  padding: 20px;
+  margin-top: 30px;
+  background-image: linear-gradient(to left, rgb(111, 111, 200), rgb(70, 120, 120), rgb(146, 110, 171));
+}
+
+form {
+  border:10px dotted #111111;
+}
+
+input [type=text],[type=email],input[type=submit],select,option input [type=radio],
+[type=checkbos] {
+  display: block;
+  width: auto;
+  height: 5rem;
+}
+
+select,option,label,legend {
+  font-variant:normal;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+textarea {
+  width: 50%;
+  display: block;
+}
+
+header {
+  background: linear-gradient(to bottom, rgb(97, 137, 151), rgba(165, 113, 113, 0.919));
+  padding: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+ @media(max-width: 1200px) {
+  html{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+aside {
+  background-image: url("../images/background/images.jpeg");
+}
+
+html{
+    font-size: 20px;
+     }
+
+ #image{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+ }
+}
